@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="TDV" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+
+    	<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    	<link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+
+    	<link rel="manifest" href="site.webmanifest">
+    	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    	<link rel="shortcut icon" href="./image/favicon.ico">
+	<!-- IE -->
+   	<link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico" />
+   	<!-- Edge FULL https://www.-->
+   	<link rel="shortcut icon" href="https://www.gezamenlijke-brandweer.nl/publiek/test/image/favicon.ico" type="image/x-icon" />
+   	<!-- other browsers -->
+   	<link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
+    	
+    	<meta name="application-name" content="TDV">
+    	<meta name="msapplication-TileColor" content="#da532c">
+    	<meta name="msapplication-TileImage" content="./image/mstile-144x144.png">
+    	<meta name="msapplication-config" content="browserconfig.xml">
+    	<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+  	<script src="./js/jquery.min.js"></script>
+  	<script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+  window.console = window.console || function(t) {};
+  </script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+  </script>
+
+
+</head>
+
+<body style="background-color:black;">
+
+<center>
+
+ <img class="img-responsive" name="usaMap" src="./image/scherm.png" usemap="#m_usaMap" border="0" width="80%">
+ <h3 style="background-color:black; color:white;"><p id="answer"></p></h3>
+ <a href="./index.html">Terug naar beginscherm</a>
+</center>
+
+<map name="m_usaMap">
+
+    <area target="" alt="" title="" coords="2,1,118,64" shape="rect" onclick="checkanswer(1)">
+    <area target="" alt="" title="" coords="122,3,569,64" shape="rect" onclick="checkanswer(2)">
+    <area target="" alt="" title="" coords="3,65,956,86" shape="rect" onclick="checkanswer(3)">
+    <area target="" alt="" title="" coords="596,3,714,66" shape="rect" onclick="checkanswer(4)">
+    <area target="" alt="" title="" coords="720,1,806,66" shape="rect" onclick="checkanswer(5)">
+    <area target="" alt="" title="" coords="809,3,874,66" shape="rect" onclick="checkanswer(6)">
+    <area target="" alt="" title="" coords="879,4,958,68" shape="rect" onclick="checkanswer(7)">
+    <area target="" alt="" title="" coords="963,3,1054,68" shape="rect" onclick="checkanswer(8)">
+    <area target="" alt="" title="" coords="1060,3,1121,69" shape="rect" onclick="checkanswer(9)">
+    <area target="" alt="" title="" coords="1275,3,1413,70" shape="rect" onclick="checkanswer(10)">
+    <area target="" alt="" title="" coords="13,94,91,164" shape="rect" onclick="checkanswer(11)">
+    <area target="" alt="" title="" coords="101,96,167,161" shape="rect" onclick="checkanswer(12)">
+    <area target="" alt="" title="" coords="185,95,250,160" shape="rect" onclick="checkanswer(13)">
+    <area target="" alt="" title="" coords="266,96,333,161" shape="rect" onclick="checkanswer(14)">
+    <area target="" alt="" title="" coords="348,96,416,160" shape="rect" onclick="checkanswer(15)">
+    <area target="" alt="" title="" coords="431,96,496,160" shape="rect" onclick="checkanswer(16)">
+    <area target="" alt="" title="" coords="516,96,581,161" shape="rect" onclick="checkanswer(17)">
+    <area target="" alt="" title="" coords="610,104,784,154" shape="rect" onclick="checkanswer(18)">
+    <area target="" alt="" title="" coords="918,99,1155,161" shape="rect" onclick="checkanswer(19)">
+    <area target="" alt="" title="" coords="1183,96,1298,161" shape="rect" onclick="checkanswer(20)">
+    <area target="" alt="" title="" coords="1319,95,1388,161" shape="rect" onclick="checkanswer(21)">
+    <area target="" alt="" title="" coords="29,322,183,378" shape="rect" onclick="checkanswer(22)">
+    <area target="" alt="" title="" coords="26,419,181,479" shape="rect" onclick="checkanswer(23)">
+
+    <area target="" alt="" title="" coords="1145,374,1244,428" shape="rect" onclick="checkanswer(26)">
+    <area target="" alt="" title="" coords="1159,191,1229,606" shape="rect" onclick="checkanswer(25)">
+
+    <area target="" alt="" title="" coords="1312,183,1413,258" shape="rect" onclick="checkanswer(27)">
+    <area target="" alt="" title="" coords="1314,267,1413,354" shape="rect" onclick="checkanswer(28)">
+    <area target="" alt="" title="" coords="1317,373,1409,473" shape="rect" onclick="checkanswer(29)">
+    <area target="" alt="" title="" coords="1319,509,1409,589" shape="rect" onclick="checkanswer(30)">
+    <area target="" alt="" title="" coords="1318,613,1408,693" shape="rect" onclick="checkanswer(31)">
+    <area target="" alt="" title="" coords="1307,606,1308,692,1410,697,1409,792,1076,795,1075,605" shape="poly" onclick="checkanswer(32)">
+    <area target="" alt="" title="" coords="3,606,336,796" shape="rect" onclick="checkanswer(33)">
+
+    <area target="" alt="" title="" coords="706,671,24" shape="circle" onclick="checkanswer(35)">
+    <area target="" alt="" title="" coords="724,622,26" shape="circle" onclick="checkanswer(36)">
+    <area target="" alt="" title="" coords="675,521,739,561" shape="rect" onclick="checkanswer(37)">
+    <area target="" alt="" title="" coords="609,670,24" shape="circle" onclick="checkanswer(38)">
+    <area target="" alt="" title="" coords="786,625,26" shape="circle" onclick="checkanswer(39)">
+    <area target="" alt="" title="" coords="809,666,23" shape="circle" onclick="checkanswer(40)">
+    <area target="" alt="" title="" coords="787,690,24" shape="circle" onclick="checkanswer(41)">
+    <area target="" alt="" title="" coords="795,741,819,740,820,791,760,792,759,771" shape="poly" onclick="checkanswer(42)">
+
+    <area target="" alt="" title="" coords="706,671,109" shape="circle" onclick="checkanswer(34)">
+    <area target="" alt="" title="" coords="3,88,1414,796" shape="rect" onclick="checkanswer(24)">
+
+</map>
+
+<script>
+var gquestion = "";
+var number = "";
+var canswer = "";
+
+function myFunction(number) {
+  switch(number) {
+    case 1:
+      text = "Terug:<br>Tik op dit pictogram om terug te keren naar het hoofdmenu.";
+    break;
+    case 2:
+      text = "Systeem statusbalk:<br>Dit pictogram geeft de vluchtstatus van het vliegtuig aan en geeft verschillende waarschuwingsberichten weer.";
+    break;
+    case 3:
+      text = "Indicatorbalk voor batterijniveau:<br>De indicator van het batterijniveau geeft een dynamische weergave van het batterijniveau. De gekleurde zones op de batterijniveau-indicator geven de vermogensniveaus weer die nodig zijn om verschillende functies uit te voeren.";
+    break;
+    case 4:
+      text = "Vliegtuigmodus:<br>De tekst naast dit pictogram geeft de huidige vliegtuigmodus aan. Tik om de instellingen van de Flight Controller te configureren. Met deze instellingen kunt u vluchtlimieten wijzigen en versterkingswaarden instellen.";
+    break;
+    case 5:
+      text = "GNSS-signaalsterkte:<br>Toont de huidige GNSS-signaalsterkte. \"R\" wordt weergegeven in de rechter benedenhoek als de RTK van het vliegtuig is ingeschakeld.";
+    break;
+    case 6:
+      text = "Obstacle Sensing Function Status:<br>Geeft de status weer voor alle detectiesystemen. Als de richting van het overeenkomstige detectiesysteem normaal werkt, wordt deze in groen weergegeven, anders wordt deze in rood weergegeven. Alles groen geeft aan dat het detectiesysteem met zes richtingen normaal werkt en alles rood geeft aan dat het detectiesysteem nog niet actief is. Vlieg alsjeblieft voorzichtig.";
+    break;
+    case 7:
+      text = "Signaal afstandsbediening:<br>Toont de sterkte van het signaal van de afstandsbediening. Het pictogram knippert als er tijdens de vlucht een storing wordt herkend. Als er geen aanvullende waarschuwingen zijn in DJI Pilot, betekent dit dat de interferentie geen invloed heeft op de werking en de";
+    break;
+    case 8:
+      text = "Signaalsterkte HD-videoverbinding:<br>Dit pictogram toont de sterkte van de HD-videoverbindingsverbinding tussen het vliegtuig en de afstandsbediening. De tekst bovenaan geeft de gebruikte frequentie aan. Tik op voor instellingen voor beeldoverdracht.";
+    break;
+    case 9:
+      text = "Batterij-instellingen:<br>Toont het huidige batterijniveau. Tik op om het batterij-informatiemenu weer te geven, de verschillende drempels voor batterijwaarschuwingen in te stellen en de geschiedenis van de batterijwaarschuwingen te bekijken.";
+    break;
+    case 10:
+      text = "Meer instellingen:<br>Perceptie-instellingen - Remote Controller Settings - Instellingen voor beeldoverdracht - Vliegtuigbatterij-instellingen - RTK-instellingen - Algemene instellingen";
+    break;
+    case 11:
+      text = "Berichtenvak:<br>Tik om alle waarschuwingsberichten te lezen.";
+    break;
+    case 12:
+      text = "Gimbal (gestabiliseerde ophanging) Orientation Adjustment:<br>Tik om de Gimbal Orientation Adjustment te selecteren als Gimbal Recenter, Recenter Gimbal Yaw, Gimbal Yaw Downward of Gimbal Downward, Om de camera’s in de landingspositie te zetten.";
+    break;
+    case 13:
+      text = "Beacon:<br>Tik om het Collesionlight in/uit te schakelen. Zal veranderen in het pictogram van de discrete modus zodra het is ingeschakeld.";
+    break;
+    case 14:
+      text = "Multiply Gimbal Control:<br>Tik om deze in te schakelen, je kunt twee of drie cardanische ophanging en gieren besturen. ";
+    break;
+    case 15:
+      text = "Smart Track:<br>Tik om Smart Track (volgen) in te schakelen.";
+    break;
+    case 16:
+      text = "PIN-punt:<br>Tik om een locatie op te nemen.";
+    break;
+    case 17:
+      text = "Laserbereik:<br>Tik om Laserafstandsmeter in te schakelen.";
+    break;
+    case 18:
+      text = "Camera en zoom:<br>Geeft de huidige camera en zijn zoomfactor weer.";
+    break;
+    case 19:
+      text = "Cameraparameters:<br>Geeft de huidige cameraparameters weer.";
+    break;
+    case 20:
+      text = "Focusmodus:<br>Tik om de focusmodus te wisselen, met ondersteuning van MF, AFC en AFS.";
+    break;
+    case 21:
+      text = "Automatische belichtingsvergrendeling:<br>Tik om de belichtingswaarde te vergrendelen.";
+    break;
+    case 22:
+      text = "Schakelknop voor weergave infraroodcamera:<br>Tik om over te schakelen naar de infraroodcamera.";
+    break;
+    case 23:
+      text = "Schakelknop brede cameraweergave:<br>Tik om over te schakelen naar brede camera.";
+    break;
+    case 24:
+      text = "Cameraweergave:<br>Geeft het huidige camerabeeld weer.";
+    break;
+    case 25:
+      text = "Zoommenu:<br>Tik om de zoomfactor van de camera aan te passen.";
+    break;
+    case 26:
+      text = "Gimbal- schuifregelaar:<br>Geeft de kantelhoek van de cardanische ophanging weer.";
+    break;
+    case 27:
+      text = "Camera-instellingen:<br>Tik om de foto- en video-instellingen in te voeren. Tik om foto-instellingen te configureren, zoals fotomodus en afbeeldingsindeling. Tik om video-instellingen te configureren, zoals videoformaat en – formaat. Tik om video-ondertiteling, raster- en slimme LED-instellingen te configureren (om arm- LED's, baken-LED's en status-LED's in / uit te schakelen). De instellingen kunnen variëren afhankelijk van verschillende cameramodellen.";
+    break;
+    case 28:
+      text = "Foto / video wisselen:<br>Tik om te schakelen tussen foto- en video-opnamemodi";
+    break;
+    case 29:
+      text = "Sluiter / opnameknop:<br>Tik om foto's te maken of om de opname te starten / stoppen. Gebruikers kunnen ook op de sluiter- of opnameknop op de afstandsbediening drukken om foto's te maken of video op te nemen. ";
+    break;
+    case 30:
+      text = "Afspelen:<br>Tik om Afspelen te openen en bekijk een voorbeeld van foto's en video's zodra ze zijn vastgelegd. ";
+    break;
+    case 31:
+      text = "Parameterinstellingen:<br>Tik om ISO, sluiter, belichtingswaarden en andere parameters in te stellen.";
+    break;
+    case 32:
+      text = "Kaart:<br>Tik om de kaart weer te geven.";
+    break;
+    case 33:
+      text = "Navigatie- Weergave Toont de oriëntatie van het vliegtuig en de cardanische ophanging en informatie over het vermijden van obstakels. Raadpleeg de sectie Primary Flight Display (PFD) voor meer details.";
+    break;
+    case 34:
+      text = "Voorbeeld FPV-camera/cardanische camera Zonder een cardanische ophanging en camera kan het vliegtuig videobeelden verzenden via de FPV-camera. Met een enkele cardanische ophanging en camera kan het vliegtuig beelden verzenden via de FPV-camera en de enkele camera; er kunnen twee weergaven worden weergegeven. Met dubbele cardanische ophangingen en camera kan het vliegtuig beelden verzenden via de FPV-camera en de twee camera's. Tik om de weergave te selecteren. Met drievoudige cardanische ophangingen en camera's kan het vliegtuig beelden verzenden via de FPV-camera en de drie camera's. Tik om de weergave te selecteren.";
+    break;
+
+    case 35:
+      text = "Vliegtuig:<br>Wanneer het vliegtuig draait, draait het navigatiedisplay.";
+    break;
+    case 36:
+      text = "Vliegtuig horizontale snelheidsvector:<br>Geeft de richting en snelheid van het vliegtuig weer.";
+    break;
+    case 37:
+      text = "Oriëntatie van het vliegtuig:<br>Geeft de huidige oriëntatie van het vliegtuig weer.";
+    break;
+    case 38:
+      text = "De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Paars):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien.";
+    break;
+    case 39:
+      text = "De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Geel):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien.";
+    break;
+    case 40:
+      text = "De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Blauw):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien.";
+    break;
+    case 41:
+      text = "Startpuntoriëntatie:<br>Geeft de thuispositie ten opzichte van het vliegtuig weer. Wanneer de afstand van het thuispunt meer dan 16 m bedraagt, bevindt het thuispunt zich aan de rand van het navigatiedisplay.";
+    break;
+    case 42:
+      text = "Afstand van het startpunt:<br>Geeft de afstand tussen het thuispunt en het vliegtuig weer.";
+    break;
+
+    default:
+      text = "empty";
+  }
+  
+  document.getElementById("answer").innerHTML = text;
+  
+}
+
+function givequestion() {
+	gquestion = Math.floor(Math.random() * 42) + 1;
+	myFunction(gquestion);
+}
+
+function checkanswer(canswer) {
+	if (gquestion == canswer) {
+		gquestion = Math.floor(Math.random() * 42) + 1;
+		myFunction(gquestion);
+	} else {
+		alert("Niet goed");
+	} 
+}
+
+window.onload = givequestion();
+
+</script>
+<script type="text/javascript" src="./js/imageMapResizer.min.js"></script>
+<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

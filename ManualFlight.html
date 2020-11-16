@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="TDV" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+
+    	<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    	<link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+
+    	<link rel="manifest" href="site.webmanifest">
+    	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    	<link rel="shortcut icon" href="./image/favicon.ico">
+	<!-- IE -->
+   	<link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico" />
+   	<!-- Edge FULL https://www.-->
+   	<link rel="shortcut icon" href="https://www.gezamenlijke-brandweer.nl/publiek/test/image/favicon.ico" type="image/x-icon" />
+   	<!-- other browsers -->
+   	<link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
+    	
+    	<meta name="application-name" content="TDV">
+    	<meta name="msapplication-TileColor" content="#da532c">
+    	<meta name="msapplication-TileImage" content="./image/mstile-144x144.png">
+    	<meta name="msapplication-config" content="browserconfig.xml">
+    	<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+  	<script src="./js/jquery.min.js"></script>
+  	<script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+  window.console = window.console || function(t) {};
+  </script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+  </script>
+
+
+</head>
+<body>
+
+<center>
+ <img class="img-responsive" name="usaMap" src="./image/scherm.png" alt="Workplace" usemap="#m_usaMap" border="0" width="80%">
+ <h2 style="background-color:black; color:white;"><p id="answer"></p></h2>
+</center>
+
+
+<map name="m_usaMap">
+    <area class="area" target="_self" alt="" title="" href="./index.html" coords="2,1,118,64" shape="rect">
+    <area class="area" target="" alt="" title="" coords="122,3,569,64" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip2">
+    <area class="area" target="" alt="" title="" coords="3,65,956,86" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip3">
+    <area class="area" target="" alt="" title="" coords="596,3,714,66" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip4">
+    <area class="area" target="" alt="" title="" coords="720,1,806,66" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip5">
+    <area class="area" target="" alt="" title="" coords="809,3,874,66" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip6">
+    <area class="area" target="" alt="" title="" coords="879,4,958,68" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip7">
+    <area class="area" target="" alt="" title="" coords="963,3,1054,68" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip8">
+    <area class="area" target="" alt="" title="" coords="1060,3,1121,69" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip9">
+    <area class="area" target="" alt="" title="" coords="1275,3,1413,70" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip10">
+    <area class="area" target="" alt="" title="" coords="13,94,91,164" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip11">
+    <area class="area" target="" alt="" title="" coords="101,96,167,161" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip12">
+    <area class="area" target="" alt="" title="" coords="185,95,250,160" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip13">
+    <area class="area" target="" alt="" title="" coords="266,96,333,161" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip14">
+    <area class="area" target="" alt="" title="" coords="348,96,416,160" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip15">
+    <area class="area" target="" alt="" title="" coords="431,96,496,160" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip16">
+    <area class="area" target="" alt="" title="" coords="516,96,581,161" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip17">
+    <area class="area" target="" alt="" title="" coords="610,104,784,154" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip18">
+    <area class="area" target="" alt="" title="" coords="918,99,1155,161" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip19">
+    <area class="area" target="" alt="" title="" coords="1183,96,1298,161" shape="rect" style="outline:none;" tooltipbackround="black" tooltipid="area-tooltip20">
+    <area class="area" target="" alt="" title="" coords="1319,95,1388,161" shape="rect" tooltipbackround="black" tooltipid="area-tooltip21">
+    <area class="area" target="" alt="" title="" coords="29,322,183,378" shape="rect" tooltipbackround="black" tooltipid="area-tooltip22">
+    <area class="area" target="" alt="" title="" coords="26,419,181,479" shape="rect" tooltipbackround="black" tooltipid="area-tooltip23">
+
+    <area class="area" target="" alt="" title="" coords="1145,374,1244,428" shape="rect" tooltipbackround="black" tooltipid="area-tooltip26">
+    <area class="area" target="" alt="" title="" coords="1159,191,1229,606" shape="rect" tooltipbackround="black" tooltipid="area-tooltip25">
+
+    <area class="area" target="" alt="" title="" coords="1312,183,1413,258" shape="rect" tooltipbackround="black" tooltipid="area-tooltip27">
+    <area class="area" target="" alt="" title="" coords="1314,267,1413,354" shape="rect" tooltipbackround="black" tooltipid="area-tooltip28">
+    <area class="area" target="" alt="" title="" coords="1317,373,1409,473" shape="rect" tooltipbackround="black" tooltipid="area-tooltip29">
+    <area class="area" target="" alt="" title="" coords="1319,509,1409,589" shape="rect" tooltipbackround="black" tooltipid="area-tooltip30">
+    <area class="area" target="" alt="" title="" coords="1318,613,1408,693" shape="rect" tooltipbackround="black" tooltipid="area-tooltip31">
+    <area class="area" target="" alt="" title="" coords="1307,606,1308,692,1410,697,1409,792,1076,795,1075,605" shape="poly" tooltipbackround="black" tooltipid="area-tooltip32">
+    <area class="area" target="" alt="" title="" coords="3,606,336,796" shape="rect" tooltipbackround="black" tooltipid="area-tooltip33">
+
+    <area class="area" target="" alt="" title="" coords="706,671,24" shape="circle" tooltipbackround="black" tooltipid="area-tooltip35">
+    <area class="area" target="" alt="" title="" coords="724,622,26" shape="circle" tooltipbackround="black" tooltipid="area-tooltip36">
+    <area class="area" target="" alt="" title="" coords="675,521,739,561" shape="rect" tooltipbackround="black" tooltipid="area-tooltip37">
+    <area class="area" target="" alt="" title="" coords="609,670,24" shape="circle" tooltipbackround="black" tooltipid="area-tooltip38">
+    <area class="area" target="" alt="" title="" coords="786,625,26" shape="circle" tooltipbackround="black" tooltipid="area-tooltip39">
+    <area class="area" target="" alt="" title="" coords="809,666,23" shape="circle" tooltipbackround="black" tooltipid="area-tooltip40">
+    <area class="area" target="" alt="" title="" coords="787,690,24" shape="circle" tooltipbackround="black" tooltipid="area-tooltip41">
+    <area class="area" target="" alt="" title="" coords="795,741,819,740,820,791,760,792,759,771" shape="poly" tooltipbackround="black" tooltipid="area-tooltip42">
+
+    <area class="area" target="" alt="" title="" coords="706,671,109" shape="circle" tooltipbackround="black" tooltipid="area-tooltip34">
+    <area class="area" target="" alt="" title="" coords="3,88,1414,796" shape="rect" tooltipbackround="black" tooltipid="area-tooltip24">  
+</map>
+<i id="area-tooltip1" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Terug:<br>Tik op dit pictogram om terug te keren naar het hoofdmenu." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip2" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Systeem statusbalk:<br>Dit pictogram geeft de vluchtstatus van het vliegtuig aan en geeft verschillende waarschuwingsberichten weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip3" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Indicatorbalk voor batterijniveau:<br>De indicator van het batterijniveau geeft een dynamische weergave van het batterijniveau. De gekleurde zones op de batterijniveau-indicator geven de vermogensniveaus weer die nodig zijn om verschillende functies uit te voeren." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip4" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Vliegtuigmodus:<br>De tekst naast dit pictogram geeft de huidige vliegtuigmodus aan. Tik om de instellingen van de Flight Controller te configureren. Met deze instellingen kunt u vluchtlimieten wijzigen en versterkingswaarden instellen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip5" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="GNSS-signaalsterkte:<br>Toont de huidige GNSS-signaalsterkte. \"R\" wordt weergegeven in de rechter benedenhoek als de RTK van het vliegtuig is ingeschakeld." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip6" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Obstacle Sensing Function Status:<br>Geeft de status weer voor alle detectiesystemen. Als de richting van het overeenkomstige detectiesysteem normaal werkt, wordt deze in groen weergegeven, anders wordt deze in rood weergegeven. Alles groen geeft aan dat het detectiesysteem met zes richtingen normaal werkt en alles rood geeft aan dat het detectiesysteem nog niet actief is. Vlieg alsjeblieft voorzichtig." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip7" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Signaal afstandsbediening:<br>Toont de sterkte van het signaal van de afstandsbediening. Het pictogram knippert als er tijdens de vlucht een storing wordt herkend. Als er geen aanvullende waarschuwingen zijn in DJI Pilot, betekent dit dat de interferentie geen invloed heeft op de werking en de" style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip8" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Signaalsterkte HD-videoverbinding:<br>Dit pictogram toont de sterkte van de HD-videoverbindingsverbinding tussen het vliegtuig en de afstandsbediening. De tekst bovenaan geeft de gebruikte frequentie aan. Tik op voor instellingen voor beeldoverdracht." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip9" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Batterij-instellingen:<br>Toont het huidige batterijniveau. Tik op om het batterij-informatiemenu weer te geven, de verschillende drempels voor batterijwaarschuwingen in te stellen en de geschiedenis van de batterijwaarschuwingen te bekijken." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip10" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Meer instellingen:<br>Perceptie-instellingen - Remote Controller Settings - Instellingen voor beeldoverdracht - Vliegtuigbatterij-instellingen - RTK-instellingen - Algemene instellingen" style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip11" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Berichtenvak:<br>Tik om alle waarschuwingsberichten te lezen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip12" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Gimbal (gestabiliseerde ophanging) Orientation Adjustment:<br>Tik om de Gimbal Orientation Adjustment te selecteren als Gimbal Recenter, Recenter Gimbal Yaw, Gimbal Yaw Downward of Gimbal Downward, Om de camera’s in de landingspositie te zetten." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip13" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Beacon:<br>Tik om het Collesionlight in/uit te schakelen. Zal veranderen in het pictogram van de discrete modus zodra het is ingeschakeld." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip14" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Multiply Gimbal Control:<br>Tik om deze in te schakelen, je kunt twee of drie cardanische ophanging en gieren besturen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip15" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Smart Track:<br>Tik om Smart Track (volgen) in te schakelen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip16" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="PIN-punt:<br>Tik om een locatie op te nemen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip17" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Laserbereik:<br>Tik om Laserafstandsmeter in te schakelen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip18" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Camera en zoom:<br>Geeft de huidige camera en zijn zoomfactor weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip19" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Cameraparameters:<br>Geeft de huidige cameraparameters weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip20" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Focusmodus:<br>Tik om de focusmodus te wisselen, met ondersteuning van MF, AFC en AFS." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip21" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Automatische belichtingsvergrendeling:<br>Tik om de belichtingswaarde te vergrendelen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip22" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Schakelknop voor weergave infraroodcamera:<br>Tik om over te schakelen naar de infraroodcamera." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip23" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Schakelknop brede cameraweergave:<br>Tik om over te schakelen naar brede camera." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip24" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Cameraweergave:<br>Geeft het huidige camerabeeld weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip25" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Zoommenu:<br>Tik om de zoomfactor van de camera aan te passen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip26" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Gimbal- schuifregelaar:<br>Geeft de kantelhoek van de cardanische ophanging weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip27" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Camera-instellingen:<br>Tik om de foto- en video-instellingen in te voeren. Tik om foto-instellingen te configureren, zoals fotomodus en afbeeldingsindeling. Tik om video-instellingen te configureren, zoals videoformaat en – formaat. Tik om video-ondertiteling, raster- en slimme LED-instellingen te configureren (om arm- LED's, baken-LED's en status-LED's in / uit te schakelen). De instellingen kunnen variëren afhankelijk van verschillende cameramodellen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip28" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Foto / video wisselen:<br>Tik om te schakelen tussen foto- en video-opnamemodus" style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip29" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Sluiter / opnameknop:<br>Tik om foto's te maken of om de opname te starten / stoppen. Gebruikers kunnen ook op de sluiter- of opnameknop op de afstandsbediening drukken om foto's te maken of video op te nemen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip30" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Afspelen:<br>Tik om Afspelen te openen en bekijk een voorbeeld van foto's en video's zodra ze zijn vastgelegd." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip31" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Parameterinstellingen:<br>Tik om ISO, sluiter, belichtingswaarden en andere parameters in te stellen." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip32" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="left" title="" data-animation="false" data-trigger="manual" data-original-title="Kaart:<br>Tik om de kaart weer te geven." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip33" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Navigatie- Weergave:<br>Toont de oriëntatie van het vliegtuig en de cardanische ophanging en informatie over het vermijden van obstakels. Raadpleeg de sectie Primary Flight Display (PFD) voor meer details." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip34" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Voorbeeld FPV-camera/cardanische camera:<br>Zonder een cardanische ophanging en camera kan het vliegtuig videobeelden verzenden via de FPV-camera. Met een enkele cardanische ophanging en camera kan het vliegtuig beelden verzenden via de FPV-camera en de enkele camera; er kunnen twee weergaven worden weergegeven. Met dubbele cardanische ophangingen en camera kan het vliegtuig beelden verzenden via de FPV-camera en de twee camera's. Tik om de weergave te selecteren. Met drievoudige cardanische ophangingen en camera's kan het vliegtuig beelden verzenden via de FPV-camera en de drie camera's. Tik om de weergave te selecteren." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip35" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Vliegtuig:<br>Wanneer het vliegtuig draait, draait het navigatiedisplay." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip36" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Vliegtuig horizontale snelheidsvector:<br>Geeft de richting en snelheid van het vliegtuig weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip37" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Oriëntatie van het vliegtuig:<br>Geeft de huidige oriëntatie van het vliegtuig weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip38" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Paars):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip39" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Geel):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip40" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Blauw):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip41" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Startpuntoriëntatie:<br>Geeft de thuispositie ten opzichte van het vliegtuig weer. Wanneer de afstand van het thuispunt meer dan 16 m bedraagt, bevindt het thuispunt zich aan de rand van het navigatiedisplay." style="top: 77px; left: 124px;">&nbsp;</i>
+<i id="area-tooltip42" class="area-tooltip" data-toggle="tooltip" data-html="true" data-placement="right" title="" data-animation="false" data-trigger="manual" data-original-title="Afstand van het startpunt:<br>Geeft de afstand tussen het thuispunt en het vliegtuig weer." style="top: 77px; left: 124px;">&nbsp;</i>
+<script>
+
+function myFunction(number) {
+  switch(number) {
+    case 1:
+      text = "Terug:<br>Tik op dit pictogram om terug te keren naar het hoofdmenu.";
+    break;
+    case 2:
+      text = "Systeem statusbalk:<br>Dit pictogram geeft de vluchtstatus van het vliegtuig aan en geeft verschillende waarschuwingsberichten weer.";
+    break;
+    case 3:
+      text = "Indicatorbalk voor batterijniveau:<br>De indicator van het batterijniveau geeft een dynamische weergave van het batterijniveau. De gekleurde zones op de batterijniveau-indicator geven de vermogensniveaus weer die nodig zijn om verschillende functies uit te voeren.";
+    break;
+    case 4:
+      text = "Vliegtuigmodus:<br>De tekst naast dit pictogram geeft de huidige vliegtuigmodus aan. Tik om de instellingen van de Flight Controller te configureren. Met deze instellingen kunt u vluchtlimieten wijzigen en versterkingswaarden instellen.";
+    break;
+    case 5:
+      text = "GNSS-signaalsterkte:<br>Toont de huidige GNSS-signaalsterkte. \"R\" wordt weergegeven in de rechter benedenhoek als de RTK van het vliegtuig is ingeschakeld.";
+    break;
+    case 6:
+      text = "Obstacle Sensing Function Status:<br>Geeft de status weer voor alle detectiesystemen. Als de richting van het overeenkomstige detectiesysteem normaal werkt, wordt deze in groen weergegeven, anders wordt deze in rood weergegeven. Alles groen geeft aan dat het detectiesysteem met zes richtingen normaal werkt en alles rood geeft aan dat het detectiesysteem nog niet actief is. Vlieg alsjeblieft voorzichtig.";
+    break;
+    case 7:
+      text = "Signaal afstandsbediening:<br>Toont de sterkte van het signaal van de afstandsbediening. Het pictogram knippert als er tijdens de vlucht een storing wordt herkend. Als er geen aanvullende waarschuwingen zijn in DJI Pilot, betekent dit dat de interferentie geen invloed heeft op de werking en de";
+    break;
+    case 8:
+      text = "Signaalsterkte HD-videoverbinding:<br>Dit pictogram toont de sterkte van de HD-videoverbindingsverbinding tussen het vliegtuig en de afstandsbediening. De tekst bovenaan geeft de gebruikte frequentie aan. Tik op voor instellingen voor beeldoverdracht.";
+    break;
+    case 9:
+      text = "Batterij-instellingen:<br>Toont het huidige batterijniveau. Tik op om het batterij-informatiemenu weer te geven, de verschillende drempels voor batterijwaarschuwingen in te stellen en de geschiedenis van de batterijwaarschuwingen te bekijken.";
+    break;
+    case 10:
+      text = "Meer instellingen:<br>Perceptie-instellingen - Remote Controller Settings - Instellingen voor beeldoverdracht - Vliegtuigbatterij-instellingen - RTK-instellingen - Algemene instellingen";
+    break;
+    case 11:
+      text = "Berichtenvak:<br>Tik om alle waarschuwingsberichten te lezen.";
+    break;
+    case 12:
+      text = "Gimbal (gestabiliseerde ophanging) Orientation Adjustment:<br>Tik om de Gimbal Orientation Adjustment te selecteren als Gimbal Recenter, Recenter Gimbal Yaw, Gimbal Yaw Downward of Gimbal Downward, Om de camera’s in de landingspositie te zetten.";
+    break;
+    case 13:
+      text = "Beacon:<br>Tik om het Collesionlight in/uit te schakelen. Zal veranderen in het pictogram van de discrete modus zodra het is ingeschakeld.";
+    break;
+    case 14:
+      text = "Multiply Gimbal Control:<br>Tik om deze in te schakelen, je kunt twee of drie cardanische ophanging en gieren besturen.";
+    break;
+    case 15:
+      text = "Smart Track:<br>Tik om Smart Track (volgen) in te schakelen.";
+    break;
+    case 16:
+      text = "PIN-punt:<br>Tik om een locatie op te nemen.";
+    break;
+    case 17:
+      text = "Laserbereik:<br>Tik om Laserafstandsmeter in te schakelen.";
+    break;
+    case 18:
+      text = "Camera en zoom:<br>Geeft de huidige camera en zijn zoomfactor weer.";
+    break;
+    case 19:
+      text = "Cameraparameters:<br>Geeft de huidige cameraparameters weer.";
+    break;
+    case 20:
+      text = "Focusmodus:<br>Tik om de focusmodus te wisselen, met ondersteuning van MF, AFC en AFS.";
+    break;
+    case 21:
+      text = "Automatische belichtingsvergrendeling:<br>Tik om de belichtingswaarde te vergrendelen.";
+    break;
+    case 22:
+      text = "Schakelknop voor weergave infraroodcamera:<br>Tik om over te schakelen naar de infraroodcamera.";
+    break;
+    case 23:
+      text = "Schakelknop brede cameraweergave:<br>Tik om over te schakelen naar brede camera.";
+    break;
+    case 24:
+      text = "Cameraweergave:<br>Geeft het huidige camerabeeld weer.";
+    break;
+    case 25:
+      text = "Zoommenu:<br>Tik om de zoomfactor van de camera aan te passen.";
+    break;
+    case 26:
+      text = "Gimbal- schuifregelaar:<br>Geeft de kantelhoek van de cardanische ophanging weer.";
+    break;
+    case 27:
+      text = "Camera-instellingen:<br>Tik om de foto- en video-instellingen in te voeren. Tik om foto-instellingen te configureren, zoals fotomodus en afbeeldingsindeling. Tik om video-instellingen te configureren, zoals videoformaat en – formaat. Tik om video-ondertiteling, raster- en slimme LED-instellingen te configureren (om arm- LED's, baken-LED's en status-LED's in / uit te schakelen). De instellingen kunnen variëren afhankelijk van verschillende cameramodellen.";
+    break;
+    case 28:
+      text = "Foto / video wisselen:<br>Tik om te schakelen tussen foto- en video-opnamemodi";
+    break;
+    case 29:
+      text = "Sluiter / opnameknop:<br>Tik om foto's te maken of om de opname te starten / stoppen. Gebruikers kunnen ook op de sluiter- of opnameknop op de afstandsbediening drukken om foto's te maken of video op te nemen.";
+    break;
+    case 30:
+      text = "Afspelen:<br>Tik om Afspelen te openen en bekijk een voorbeeld van foto's en video's zodra ze zijn vastgelegd.";
+    break;
+    case 31:
+      text = "Parameterinstellingen:<br>Tik om ISO, sluiter, belichtingswaarden en andere parameters in te stellen.";
+    break;
+    case 32:
+      text = "Kaart:<br>Tik om de kaart weer te geven.";
+    break;
+    case 33:
+      text = "Navigatie- Weergave Toont de oriëntatie van het vliegtuig en de cardanische ophanging en informatie over het vermijden van obstakels. Raadpleeg de sectie Primary Flight Display (PFD) voor meer details.";
+    break;
+    case 34:
+      text = "Voorbeeld FPV-camera/cardanische camera Zonder een cardanische ophanging en camera kan het vliegtuig videobeelden verzenden via de FPV-camera. Met een enkele cardanische ophanging en camera kan het vliegtuig beelden verzenden via de FPV-camera en de enkele camera; er kunnen twee weergaven worden weergegeven. Met dubbele cardanische ophangingen en camera kan het vliegtuig beelden verzenden via de FPV-camera en de twee camera's. Tik om de weergave te selecteren. Met drievoudige cardanische ophangingen en camera's kan het vliegtuig beelden verzenden via de FPV-camera en de drie camera's. Tik om de weergave te selecteren.";
+    break;
+
+    case 35:
+      text = "Vliegtuig:<br>Wanneer het vliegtuig draait, draait het navigatiedisplay.";
+    break;
+    case 36:
+      text = "Vliegtuig horizontale snelheidsvector:<br>Geeft de richting en snelheid van het vliegtuig weer.";
+    break;
+    case 37:
+      text = "Oriëntatie van het vliegtuig:<br>Geeft de huidige oriëntatie van het vliegtuig weer.";
+    break;
+    case 38:
+      text = "De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Paars):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien.";
+    break;
+    case 39:
+      text = "De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Geel):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien.";
+    break;
+    case 40:
+      text = "De oriëntatie van de drie gimbals gemonteerd op het vliegtuig (Blauw):<br>Je kan de oriëntatie van de gimbal ten opzichte van het vliegtuig in real time bekijken. Wanneer de gimbal draait, zal het pictogram dienovereenkomstig draaien.";
+    break;
+    case 41:
+      text = "Startpuntoriëntatie:<br>Geeft de thuispositie ten opzichte van het vliegtuig weer. Wanneer de afstand van het thuispunt meer dan 16 m bedraagt, bevindt het thuispunt zich aan de rand van het navigatiedisplay.";
+    break;
+    case 42:
+      text = "Afstand van het startpunt:<br>Geeft de afstand tussen het thuispunt en het vliegtuig weer.";
+    break;
+
+    default:
+      text = "empty";
+  }
+  
+  document.getElementById("answer").innerHTML = text;
+
+}
+
+</script>
+
+  <script src="./js/pen.js"></script>
+  
+  
+      <script id="rendered-js">
+/* ========================================================================
+ * Bootstrap: tooltip.js v3.3.7
+ * http://getbootstrap.com/javascript/#tooltip
+ * Inspired by the original jQuery.tipsy by Jason Frame
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // TOOLTIP PUBLIC CLASS DEFINITION
+  // ===============================
+
+  var Tooltip = function (element, options) {
+    this.type = null;
+    this.options = null;
+    this.enabled = null;
+    this.timeout = null;
+    this.hoverState = null;
+    this.$element = null;
+    this.inState = null;
+
+    this.init('tooltip', element, options);
+  };
+
+  Tooltip.VERSION = '3.3.7';
+
+  Tooltip.TRANSITION_DURATION = 150;
+
+  Tooltip.DEFAULTS = {
+    animation: true,
+    placement: 'top',
+    selector: false,
+    template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>',
+    trigger: 'hover focus',
+    title: '',
+    delay: 0,
+    html: false,
+    container: false,
+    viewport: {
+      selector: 'body',
+      padding: 0 } };
+
+
+
+  Tooltip.prototype.init = function (type, element, options) {
+    this.enabled = true;
+    this.type = type;
+    this.$element = $(element);
+    this.options = this.getOptions(options);
+    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : this.options.viewport.selector || this.options.viewport);
+    this.inState = { click: false, hover: false, focus: false };
+
+    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
+      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!');
+    }
+
+    var triggers = this.options.trigger.split(' ');
+
+    for (var i = triggers.length; i--;) {if (window.CP.shouldStopExecution(0)) break;
+      var trigger = triggers[i];
+
+      if (trigger == 'click') {
+        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this));
+      } else if (trigger != 'manual') {
+        var eventIn = trigger == 'hover' ? 'mouseenter' : 'focusin';
+        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout';
+
+        this.$element.on(eventIn + '.' + this.type, this.options.selector, $.proxy(this.enter, this));
+        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this));
+      }
+    }window.CP.exitedLoop(0);
+
+    this.options.selector ?
+    this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' }) :
+    this.fixTitle();
+  };
+
+  Tooltip.prototype.getDefaults = function () {
+    return Tooltip.DEFAULTS;
+  };
+
+  Tooltip.prototype.getOptions = function (options) {
+    options = $.extend({}, this.getDefaults(), this.$element.data(), options);
+
+    if (options.delay && typeof options.delay == 'number') {
+      options.delay = {
+        show: options.delay,
+        hide: options.delay };
+
+    }
+
+    return options;
+  };
+
+  Tooltip.prototype.getDelegateOptions = function () {
+    var options = {};
+    var defaults = this.getDefaults();
+
+    this._options && $.each(this._options, function (key, value) {
+      if (defaults[key] != value) options[key] = value;
+    });
+
+    return options;
+  };
+
+  Tooltip.prototype.enter = function (obj) {
+    var self = obj instanceof this.constructor ?
+    obj : $(obj.currentTarget).data('bs.' + this.type);
+
+    if (!self) {
+      self = new this.constructor(obj.currentTarget, this.getDelegateOptions());
+      $(obj.currentTarget).data('bs.' + this.type, self);
+    }
+
+    if (obj instanceof $.Event) {
+      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true;
+    }
+
+    if (self.tip().hasClass('in') || self.hoverState == 'in') {
+      self.hoverState = 'in';
+      return;
+    }
+
+    clearTimeout(self.timeout);
+
+    self.hoverState = 'in';
+
+    if (!self.options.delay || !self.options.delay.show) return self.show();
+
+    self.timeout = setTimeout(function () {
+      if (self.hoverState == 'in') self.show();
+    }, self.options.delay.show);
+  };
+
+  Tooltip.prototype.isInStateTrue = function () {
+    for (var key in this.inState) {
+      if (this.inState[key]) return true;
+    }
+
+    return false;
+  };
+
+  Tooltip.prototype.leave = function (obj) {
+    var self = obj instanceof this.constructor ?
+    obj : $(obj.currentTarget).data('bs.' + this.type);
+
+    if (!self) {
+      self = new this.constructor(obj.currentTarget, this.getDelegateOptions());
+      $(obj.currentTarget).data('bs.' + this.type, self);
+    }
+
+    if (obj instanceof $.Event) {
+      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false;
+    }
+
+    if (self.isInStateTrue()) return;
+
+    clearTimeout(self.timeout);
+
+    self.hoverState = 'out';
+
+    if (!self.options.delay || !self.options.delay.hide) return self.hide();
+
+    self.timeout = setTimeout(function () {
+      if (self.hoverState == 'out') self.hide();
+    }, self.options.delay.hide);
+  };
+
+  Tooltip.prototype.show = function () {
+    var e = $.Event('show.bs.' + this.type);
+
+    if (this.hasContent() && this.enabled) {
+      this.$element.trigger(e);
+
+      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0]);
+      if (e.isDefaultPrevented() || !inDom) return;
+      var that = this;
+
+      var $tip = this.tip();
+
+      var tipId = this.getUID(this.type);
+
+      this.setContent();
+      $tip.attr('id', tipId);
+      this.$element.attr('aria-describedby', tipId);
+
+      if (this.options.animation) $tip.addClass('fade');
+
+      var placement = typeof this.options.placement == 'function' ?
+      this.options.placement.call(this, $tip[0], this.$element[0]) :
+      this.options.placement;
+
+      var autoToken = /\s?auto?\s?/i;
+      var autoPlace = autoToken.test(placement);
+      if (autoPlace) placement = placement.replace(autoToken, '') || 'top';
+
+      $tip.
+      detach().
+      css({ top: 0, left: 0, display: 'block' }).
+      addClass(placement).
+      data('bs.' + this.type, this);
+
+      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element);
+      this.$element.trigger('inserted.bs.' + this.type);
+
+      var pos = this.getPosition();
+      var actualWidth = $tip[0].offsetWidth;
+      var actualHeight = $tip[0].offsetHeight;
+
+      if (autoPlace) {
+        var orgPlacement = placement;
+        var viewportDim = this.getPosition(this.$viewport);
+
+        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top' :
+        placement == 'top' && pos.top - actualHeight < viewportDim.top ? 'bottom' :
+        placement == 'right' && pos.right + actualWidth > viewportDim.width ? 'left' :
+        placement == 'left' && pos.left - actualWidth < viewportDim.left ? 'right' :
+        placement;
+
+        $tip.
+        removeClass(orgPlacement).
+        addClass(placement);
+      }
+
+      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight);
+
+      this.applyPlacement(calculatedOffset, placement);
+
+      var complete = function () {
+        var prevHoverState = that.hoverState;
+        that.$element.trigger('shown.bs.' + that.type);
+        that.hoverState = null;
+
+        if (prevHoverState == 'out') that.leave(that);
+      };
+
+      $.support.transition && this.$tip.hasClass('fade') ?
+      $tip.
+      one('bsTransitionEnd', complete).
+      emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+      complete();
+    }
+  };
+
+  Tooltip.prototype.applyPlacement = function (offset, placement) {
+    var $tip = this.tip();
+    var width = $tip[0].offsetWidth;
+    var height = $tip[0].offsetHeight;
+
+    // manually read margins because getBoundingClientRect includes difference
+    var marginTop = parseInt($tip.css('margin-top'), 10);
+    var marginLeft = parseInt($tip.css('margin-left'), 10);
+
+    // we must check for NaN for ie 8/9
+    if (isNaN(marginTop)) marginTop = 0;
+    if (isNaN(marginLeft)) marginLeft = 0;
+
+    offset.top += marginTop;
+    offset.left += marginLeft;
+
+    // $.fn.offset doesn't round pixel values
+    // so we use setOffset directly with our own function B-0
+    $.offset.setOffset($tip[0], $.extend({
+      using: function (props) {
+        $tip.css({
+          top: Math.round(props.top),
+          left: Math.round(props.left) });
+
+      } },
+    offset), 0);
+
+    $tip.addClass('in');
+
+    // check to see if placing tip in new offset caused the tip to resize itself
+    var actualWidth = $tip[0].offsetWidth;
+    var actualHeight = $tip[0].offsetHeight;
+
+    if (placement == 'top' && actualHeight != height) {
+      offset.top = offset.top + height - actualHeight;
+    }
+
+    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight);
+
+    if (delta.left) offset.left += delta.left;else
+    offset.top += delta.top;
+
+    var isVertical = /top|bottom/.test(placement);
+    var arrowDelta = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight;
+    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight';
+
+    $tip.offset(offset);
+    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical);
+  };
+
+  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
+    this.arrow().
+    css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%').
+    css(isVertical ? 'top' : 'left', '');
+  };
+
+  Tooltip.prototype.setContent = function () {
+    var $tip = this.tip();
+    var title = this.getTitle();
+
+    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title);
+    $tip.removeClass('fade in top bottom left right');
+  };
+
+  Tooltip.prototype.hide = function (callback) {
+    var that = this;
+    var $tip = $(this.$tip);
+    var e = $.Event('hide.bs.' + this.type);
+
+    function complete() {
+      if (that.hoverState != 'in') $tip.detach();
+      if (that.$element) {// TODO: Check whether guarding this code with this `if` is really necessary.
+        that.$element.
+        removeAttr('aria-describedby').
+        trigger('hidden.bs.' + that.type);
+      }
+      callback && callback();
+    }
+
+    this.$element.trigger(e);
+
+    if (e.isDefaultPrevented()) return;
+
+    $tip.removeClass('in');
+
+    $.support.transition && $tip.hasClass('fade') ?
+    $tip.
+    one('bsTransitionEnd', complete).
+    emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+    complete();
+
+    this.hoverState = null;
+
+    return this;
+  };
+
+  Tooltip.prototype.fixTitle = function () {
+    var $e = this.$element;
+    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
+      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '');
+    }
+  };
+
+  Tooltip.prototype.hasContent = function () {
+    return this.getTitle();
+  };
+
+  Tooltip.prototype.getPosition = function ($element) {
+    $element = $element || this.$element;
+
+    var el = $element[0];
+    var isBody = el.tagName == 'BODY';
+
+    var elRect = el.getBoundingClientRect();
+    if (elRect.width == null) {
+      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
+      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top });
+    }
+    var isSvg = window.SVGElement && el instanceof window.SVGElement;
+    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
+    // See https://github.com/twbs/bootstrap/issues/20280
+    var elOffset = isBody ? { top: 0, left: 0 } : isSvg ? null : $element.offset();
+    var scroll = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() };
+    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null;
+
+    return $.extend({}, elRect, scroll, outerDims, elOffset);
+  };
+
+  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
+    return placement == 'bottom' ? { top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+    placement == 'top' ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+    placement == 'left' ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
+    /* placement == 'right' */{ top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width };
+
+  };
+
+  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
+    var delta = { top: 0, left: 0 };
+    if (!this.$viewport) return delta;
+
+    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0;
+    var viewportDimensions = this.getPosition(this.$viewport);
+
+    if (/right|left/.test(placement)) {
+      var topEdgeOffset = pos.top - viewportPadding - viewportDimensions.scroll;
+      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight;
+      if (topEdgeOffset < viewportDimensions.top) {// top overflow
+        delta.top = viewportDimensions.top - topEdgeOffset;
+      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) {// bottom overflow
+        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset;
+      }
+    } else {
+      var leftEdgeOffset = pos.left - viewportPadding;
+      var rightEdgeOffset = pos.left + viewportPadding + actualWidth;
+      if (leftEdgeOffset < viewportDimensions.left) {// left overflow
+        delta.left = viewportDimensions.left - leftEdgeOffset;
+      } else if (rightEdgeOffset > viewportDimensions.right) {// right overflow
+        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset;
+      }
+    }
+
+    return delta;
+  };
+
+  Tooltip.prototype.getTitle = function () {
+    var title;
+    var $e = this.$element;
+    var o = this.options;
+
+    title = $e.attr('data-original-title') || (
+    typeof o.title == 'function' ? o.title.call($e[0]) : o.title);
+
+    return title;
+  };
+
+  Tooltip.prototype.getUID = function (prefix) {
+    do {if (window.CP.shouldStopExecution(1)) break;prefix += ~~(Math.random() * 1000000);} while (
+    document.getElementById(prefix));window.CP.exitedLoop(1);
+    return prefix;
+  };
+
+  Tooltip.prototype.tip = function () {
+    if (!this.$tip) {
+      this.$tip = $(this.options.template);
+      if (this.$tip.length != 1) {
+        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!');
+      }
+    }
+    return this.$tip;
+  };
+
+  Tooltip.prototype.arrow = function () {
+    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow');
+  };
+
+  Tooltip.prototype.enable = function () {
+    this.enabled = true;
+  };
+
+  Tooltip.prototype.disable = function () {
+    this.enabled = false;
+  };
+
+  Tooltip.prototype.toggleEnabled = function () {
+    this.enabled = !this.enabled;
+  };
+
+  Tooltip.prototype.toggle = function (e) {
+    var self = this;
+    if (e) {
+      self = $(e.currentTarget).data('bs.' + this.type);
+      if (!self) {
+        self = new this.constructor(e.currentTarget, this.getDelegateOptions());
+        $(e.currentTarget).data('bs.' + this.type, self);
+      }
+    }
+
+    if (e) {
+      self.inState.click = !self.inState.click;
+      if (self.isInStateTrue()) self.enter(self);else
+      self.leave(self);
+    } else {
+      self.tip().hasClass('in') ? self.leave(self) : self.enter(self);
+    }
+  };
+
+  Tooltip.prototype.destroy = function () {
+    var that = this;
+    clearTimeout(this.timeout);
+    this.hide(function () {
+      that.$element.off('.' + that.type).removeData('bs.' + that.type);
+      if (that.$tip) {
+        that.$tip.detach();
+      }
+      that.$tip = null;
+      that.$arrow = null;
+      that.$viewport = null;
+      that.$element = null;
+    });
+  };
+
+
+  // TOOLTIP PLUGIN DEFINITION
+  // =========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this = $(this);
+      var data = $this.data('bs.tooltip');
+      var options = typeof option == 'object' && option;
+
+      if (!data && /destroy|hide/.test(option)) return;
+      if (!data) $this.data('bs.tooltip', data = new Tooltip(this, options));
+      if (typeof option == 'string') data[option]();
+    });
+  }
+
+  var old = $.fn.tooltip;
+
+  $.fn.tooltip = Plugin;
+  $.fn.tooltip.Constructor = Tooltip;
+
+
+  // TOOLTIP NO CONFLICT
+  // ===================
+
+  $.fn.tooltip.noConflict = function () {
+    $.fn.tooltip = old;
+    return this;
+  };
+
+}(jQuery);
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+$(".area").on('click', function (e) {
+
+  $("#" + $(this).attr("TooltipId")).css({
+    top: e.pageY,
+    left: e.pageX });
+
+
+  $("#" + $(this).attr("TooltipId")).tooltip('show');
+  $(".tooltip-inner").css({
+    "background-color": $(this).attr("TooltipBackround") });
+
+  var a = $("#" + $(this).attr("TooltipId")).attr("data-placement") != "" ? $("#" + $(this).attr("TooltipId")).attr("data-placement") : "top";
+  $(".tooltip-arrow").css("border-" + a + "-color", $(this).attr("TooltipBackround"));
+});
+
+$(".area").on('mouseleave', function (e) {
+  $("#" + $(this).attr("TooltipId")).tooltip('hide');
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+<script type="text/javascript" src="./js/imageMapResizer.min.js"></script>
+<script type="text/javascript">imageMapResize();</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        // iOS web app full screen hacks.
+        if(window.navigator.standalone == true) {
+                // make all link remain in web app mode.
+                $('a').click(function() {
+                        window.location = $(this).attr('href');
+            return false;
+                });
+        }
+});
+</script>
+
+
+
+
+ 
+</body></html>
