@@ -3,12 +3,12 @@
     "short_name": "TDV",
     "icons": [
         {
-            "src": "/image/android-chrome-192x192.png",
+            "src": "/dv/image/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/image/android-chrome-512x512.png",
+            "src": "/dv/image/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
