@@ -50,7 +50,22 @@
 
 </head>
 <body>
+<script>
+    document.body.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+    }, {
+      passive: false,
+      useCapture: false
+    });
 
+    window.onresize = function() {
+      $(document.body).width(window.innerWidth).height(window.innerHeight);
+    }
+
+    $(function() {
+      window.onresize();
+    });
+  </script>
 <center>
  <img class="img-responsive" name="usaMap" src="./image/scherm.png" alt="Workplace" usemap="#m_usaMap" border="0" width="80%">
  <h2 style="background-color:black; color:white;"><p id="answer"></p></h2>
