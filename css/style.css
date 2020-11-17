@@ -1,6 +1,16 @@
-body {
-  background-color: #000000;
+html {  
+    position: relative;
+    overflow: hidden;
+    height: 100%;
 }
+
+body {
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
 img {
   display: block;
   margin-left: auto;
