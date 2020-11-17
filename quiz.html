@@ -51,7 +51,22 @@
 </head>
 
 <body style="background-color:black;">
+<script>
+    document.body.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+    }, {
+      passive: false,
+      useCapture: false
+    });
 
+    window.onresize = function() {
+      $(document.body).width(window.innerWidth).height(window.innerHeight);
+    }
+
+    $(function() {
+      window.onresize();
+    });
+  </script>
 <center>
 
  <img class="img-responsive" name="usaMap" src="./image/scherm.png" usemap="#m_usaMap" border="0" width="80%">
