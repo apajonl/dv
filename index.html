@@ -50,7 +50,22 @@
 </head>
 
 <body translate="no">
-  
+  <script>
+    document.body.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+    }, {
+      passive: false,
+      useCapture: false
+    });
+
+    window.onresize = function() {
+      $(document.body).width(window.innerWidth).height(window.innerHeight);
+    }
+
+    $(function() {
+      window.onresize();
+    });
+  </script>
   <img class="img-responsive" name="usaMap" src="./image/startscherm.png" usemap="#m_usaMap" border="0" width="80%">
   <map name="m_usaMap">
     <area class="area" target="" alt="" title="" href="./ManualFlight.html" coords="37,128,536,616" shape="rect">
