@@ -203,3 +203,10 @@ div.wrap {
   position: absolute;
   visibility: hidden;
 }
+
+#answer {
+    width: 200px;
+    right: 0;
+    background: #999;
+    color: #FFFFFF;
+}
