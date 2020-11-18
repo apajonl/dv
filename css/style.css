@@ -237,8 +237,9 @@ div.wrap {
 }
 #right {
   width: 100px;
-  background: #33c;
-  
+  background: #000000;
+  color: #FFFFFF;
+	
   right: 0;
 }
 #content {
