@@ -80,6 +80,7 @@ div.wrap {
   text-align: center;
   margin: auto;
   position: absolute;
+  left: 0;
 }
 
 .tooltip {
