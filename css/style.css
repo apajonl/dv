@@ -33,7 +33,7 @@ imgold3 {
 }
 
 img {
-  border: 1px solid blue;
+  border: 1px;
 
   min-height: 98%;
   max-width: 99%;
@@ -57,7 +57,7 @@ div.quiz {
 }
 
 div.wrap {
-	border: 1px solid red;
+	border: 1px;
 
   min-height: 98%;
   max-height: 98%;
