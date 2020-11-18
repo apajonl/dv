@@ -205,6 +205,12 @@ div.wrap {
   visibility: hidden;
 }
 
+#divmain {
+    width: 100%;
+    left: 0;
+    background:#999;
+}
+
 #divanswer {
     width: 200px;
     right: 0;
