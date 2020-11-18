@@ -204,7 +204,7 @@ div.wrap {
   visibility: hidden;
 }
 
-#answer {
+#divanswer {
     width: 200px;
     right: 0;
     background: #999;
