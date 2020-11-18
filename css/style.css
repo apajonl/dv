@@ -217,3 +217,31 @@ div.wrap {
     background: #000000;
     color: #FFFFFF;
 }
+
+#wrapper {
+  min-width: 500px; /* geef altijd een minimale width mee */
+  height: 200px;
+  
+  position: relative; /* om absolute te kunnen positioneren */
+}
+#left, #right, #content {
+  position: absolute;
+  height: 100%;
+}
+
+#left {
+  width: 100px;
+  background: #c33;
+  
+  left: 0;
+}
+#right {
+  width: 100px;
+  background: #33c;
+  
+  right: 0;
+}
+#content {
+  left: 100px;
+  right: 100px;
+}
