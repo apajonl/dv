@@ -18,11 +18,18 @@ imgold {
   width: auto;
 }
 
-img {
+imgold2 {
 	width: 100%;
 	height: 100%;
 	max-width: 800px;
 	max-height: 380px;
+}
+
+img {
+	width: 100%; 
+	height: 100%; 
+	margin: 0; 
+	padding; 0;
 }
 
 div.quiz {
