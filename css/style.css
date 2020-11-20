@@ -224,7 +224,7 @@ div.wrap {
   
   position: relative; /* om absolute te kunnen positioneren */
 }
-#left, #right, #content {
+#left, #content {
   position: absolute;
   height: 100%;
 }
@@ -235,13 +235,12 @@ div.wrap {
   
   left: 0;
 }
-#right {
-  min-width: 500px;
-  display: flex;
-  background: #000000;
-  color: #FFFFFF;
-	
-  right: 0;
+#right {	
+    min-width: 420px;
+    display: flex;
+    background: #000000;
+    color: #FFFFFF;
+    width: 50%;
 }
 #content {
   left: 0px;
