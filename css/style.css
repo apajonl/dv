@@ -237,6 +237,7 @@ div.wrap {
 }
 #right {
   min-width: 500px;
+  display: flex;
   background: #000000;
   color: #FFFFFF;
 	
