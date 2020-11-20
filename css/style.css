@@ -236,11 +236,10 @@ div.wrap {
   left: 0;
 }
 #right {	
-    min-width: 420px;
+    min-width: 500px;
     display: flex;
     background: #000000;
     color: #FFFFFF;
-    width: 50%;
 }
 #content {
   left: 0px;
