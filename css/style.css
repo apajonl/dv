@@ -260,11 +260,11 @@ div.wrap {
   left: 0;
 }
 #right {
-  width: 100px;
+  width: 130px;
   right: 0;
 }
 #content {
   left: 5px;
-  right: 100px;
+  right: 130px;
   color: #FFF;
 }
