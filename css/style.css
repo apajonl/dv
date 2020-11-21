@@ -218,30 +218,58 @@ div.wrap {
     color: #FFFFFF;
 }
 
-#wrapper {
+#wrapperold {
   min-width: 500px; /* geef altijd een minimale width mee */
   height: 200px;
   
   position: relative; /* om absolute te kunnen positioneren */
 }
-#left, #content {
+#leftold, #contentold {
   position: absolute;
   height: 100%;
 }
 
-#left {
+#leftold {
   width: 100px;
   background: #c33;
   
   left: 0;
 }
-#right {	
+#rightold {	
     min-width: 500px;
     display: flex;
     background: #000000;
     color: #FFFFFF;
 }
-#content {
+#contentold {
   left: 0px;
   right: 0px;
+}
+
+#wrapper {
+  min-width: 500px; /* geef altijd een minimale width mee */
+  height: 25px;
+  
+  position: relative; /* om absolute te kunnen positioneren */
+}
+#left, #right, #content {
+  position: absolute;
+  height: 100%;
+}
+
+#left {
+  width: 5px;
+  background: #c33;
+  
+  left: 0;
+}
+#right {
+  width: 30px;
+  background: #33c;
+  
+  right: 0;
+}
+#content {
+  left: 5px;
+  right: 30px;
 }
