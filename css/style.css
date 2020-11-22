@@ -249,22 +249,34 @@ div.wrap {
 #wrapper {
   min-width: 500px; /* geef altijd een minimale width mee */
   height: 25px;
+  
   position: relative; /* om absolute te kunnen positioneren */
 }
 #left, #right, #content {
   position: absolute;
   height: 100%;
 }
+
 #left {
-  width: 5px;
+  width: 10%;
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFF;
+
   left: 0;
 }
 #right {
-  width: 130px;
+  width: 5px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFF;
+
   right: 0;
 }
 #content {
-  left: 5px;
-  right: 130px;
+  left: 10%;
+  right: 5px;
+  font-size: 1.5em;
+  text-align: center;
   color: #FFF;
 }
