@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-color:black;
     position: relative;
     overflow: hidden;
     height: 95%;
@@ -16,37 +16,6 @@ imgold {
   margin-left: auto;
   margin-right: auto;
   width: auto;
-}
-
-imgold2 {
-	width: 100%;
-	height: 100%;
-	max-width: 800px;
-	max-height: 380px;
-}
-
-imgold3 {
-	width: 100%; 
-	height: 100%; 
-	margin: 0; 
-	padding; 0;
-}
-
-imgbijna {
-  border: 1px;
-
-  min-height: 98%;
-  max-width: 99%;
-  max-height: 98%;
-
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 img {
@@ -61,26 +30,6 @@ img {
     top: 0;
     -o-object-fit: contain;
     object-fit: contain;
-}
-div.quiz {
-	width: 100%;
-	height: 100%;
-	max-width: 800px;
-	max-height: 300px;
-}
-
-div.wrap {
-	border: 1px;
-
-  min-height: 98%;
-  max-height: 98%;
-  min-width: 99%;
-  max-width: 99%;
-
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  left: 0;
 }
 
 .tooltip {
@@ -218,65 +167,28 @@ div.wrap {
     color: #FFFFFF;
 }
 
-#wrapperold {
-  min-width: 500px; /* geef altijd een minimale width mee */
-  height: 200px;
-  
-  position: relative; /* om absolute te kunnen positioneren */
-}
-#leftold, #contentold {
-  position: absolute;
-  height: 100%;
-}
-
-#leftold {
-  width: 100px;
-  background: #c33;
-  
-  left: 0;
-}
-#rightold {	
-    min-width: 500px;
-    display: flex;
-    background: #000000;
-    color: #FFFFFF;
-}
-#contentold {
-  left: 0px;
-  right: 0px;
-}
-
 #wrapper {
-  min-width: 500px; /* geef altijd een minimale width mee */
+  min-width: 500px;
   height: 25px;
-  
-  position: relative; /* om absolute te kunnen positioneren */
+  position: relative;
 }
 #left, #right, #content {
   position: absolute;
   height: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFF;
 }
 
 #left {
   width: 10%;
-  font-size: 1.5em;
-  text-align: center;
-  color: #FFF;
-
   left: 0;
 }
 #right {
   width: 5px;
-  font-size: 1.5em;
-  text-align: center;
-  color: #FFF;
-
   right: 0;
 }
 #content {
   left: 10%;
   right: 5px;
-  font-size: 1.5em;
-  text-align: center;
-  color: #FFF;
 }
