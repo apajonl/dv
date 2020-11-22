@@ -176,13 +176,13 @@ img {
   position: absolute;
   height: 100%;
   font-size: 1.5em;
-  text-align: center;
   color: #FFF;
 }
 
 #left {
   width: 10%;
   left: 0;
+  text-align: center;
 }
 #right {
   width: 5px;
