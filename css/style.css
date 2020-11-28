@@ -192,3 +192,41 @@ img {
   left: 10%;
   right: 5px;
 }
+
+body{        
+        padding-top: 20px;
+        padding-bottom: 20px;
+	margin: 0 auto;
+    }
+    .container{
+        width: 100%;
+	background: #000;
+        margin: 0 auto;
+	padding: 0px;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #000;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+   
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 25px;
+        display: inline-block;
+    }
+    .container img{
+	height: -webkit-fill-available;
+    	width: 100%;
+    	text-align: center;
+    	vertical-align: middle;
+    }
