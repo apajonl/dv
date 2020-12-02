@@ -6,7 +6,7 @@
     top: 0;
     bottom: 0;
     content: "";
-    background: #212121 url(./image/rotate.png) 0 0 no-repeat; /* replace with an image that tells the visitor to rotate the device to landscape mode */
+    background: #212121 url(https://apajonl.github.io/dv/image/rotate.png) 0 0 no-repeat; /* replace with an image that tells the visitor to rotate the device to landscape mode */
     background-size: 100% auto;
     opacity: 0.95;
   }
