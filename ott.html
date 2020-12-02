@@ -1,22 +1,32 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@media (max-width: 1024px) and (orientation: portrait){ /* tablet and smaller */
-  body:after{
-    position: absolute;
-    z-index: 9999;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    content: "";
-    background: #212121 url(http://i.stack.imgur.com/sValK.png) 0 0 no-repeat; /* replace with an image that tells the visitor to rotate the device to landscape mode */
-    background-size: 100% auto;
-    opacity: 0.95;
+div.example {
+  background-color: black;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) and (orientation: portrait){
+  div.example {
+    display: none;
   }
 }
 </style>
 </head>
 <body>
- working test.
+
+<h2>Hide elements on different screen sizes</h2>
+
+<div class="example">
+  <img src="./image/rotate.png>
+</div>
+
+
+ <div class="show">
+  
+ </div>
+
 </body>
 </html>
