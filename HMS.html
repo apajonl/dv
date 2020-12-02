@@ -34,7 +34,21 @@
   	<script src="./js/jquery.min.js"></script>
   	<script src="./js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./css/style.css">
-
+<style>
+@media (max-width: 1024px) and (orientation: portrait){ /* tablet and smaller */
+  body:after{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background: #212121 url(http://i.stack.imgur.com/sValK.png) 0 0 no-repeat; /* replace with an image that tells the visitor to rotate the device to landscape mode */
+    background-size: 100% auto;
+    opacity: 0.95;
+  }
+}
+</style>
   <script>
   window.console = window.console || function(t) {};
   </script>
