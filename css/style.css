@@ -1,14 +1,11 @@
-@media (max-width: 1024px) and (orientation: portrait){ /* tablet and smaller */
-  body:after{
-    position: absolute;
-    z-index: 9999;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    content: "";
-    background: #212121 url(https://apajonl.github.io/dv/image/rotate.png) 0 0 no-repeat; /* replace with an image that tells the visitor to rotate the device to landscape mode */
-    background-size: 100% auto;
-    opacity: 0.95;
+@media (max-width: 1024px) and (orientation: portrait){
+  div.showport {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape),(min-width : 1224px){
+  div.showturn {
+    display: none;
   }
 }
 
