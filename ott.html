@@ -3,13 +3,18 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-div.example {
+div.example2 {
   background-color: black;
   padding: 20px;
 }
 
 @media (max-width: 1024px) and (orientation: portrait){
   div.example {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape){
+  div.show {
     display: none;
   }
 }
@@ -20,12 +25,12 @@ div.example {
 <h2>Hide elements on different screen sizes</h2>
 
 <div class="example">
-  <img src="../image/rotate.png>
+  <img src="../image/rotate.png">
 </div>
 
 
  <div class="show">
-  
+   <img class="img-responsive" name="usaMap" src="./image/startscherm.png" usemap="#m_usaMap" height="100%">
  </div>
 
 </body>
