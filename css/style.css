@@ -1,4 +1,4 @@
-@media (max-width: 1024px) and (orientation: portrait){
+@media (orientation: portrait){
   div.showport {
     display: none;
   }
@@ -7,7 +7,7 @@
     opacity: 0.95;
   }
 }
-@media (max-width: 1024px) and (orientation: landscape),(min-width : 1224px){
+@media (orientation: landscape),(min-width : 1224px){
   div.showturn {
     display: none;
   }
