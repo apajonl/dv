@@ -9,13 +9,13 @@
   }
 }
 
-@media only screen (orientation:landscape),(min-width : 1224px){
-  #turn{ display:block; }
-  #container{ display:none; }
-}
 @media only screen (orientation:portrait){
   #turn{ display:none; }
   #container{ display:block; }
+}
+@media only screen (orientation:landscape),(min-width : 1224px){
+  #turn{ display:block; }
+  #container{ display:none; }
 }
 
 html {  
