@@ -3,27 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-div.example2 {
-  background-color: black;
-  padding: 20px;
-  (max-width: 1024px) and 
-}
-
-@media (orientation: portrait){
-  div.showport {
-    display: none;
-  }
-}
-@media (orientation: landscape),(min-width : 1224px){
-  div.showturn {
-    display: none;
-  }
-}
   
 @media only screen and (orientation:portrait){
   #turn{ display:block; }
   #container{ display:none; }
 }
+  
 @media only screen and (orientation:landscape){
   #turn{ display:none; }
   #container{ display:block; }
