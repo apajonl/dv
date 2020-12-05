@@ -9,11 +9,11 @@
   }
 }
 
-@media only screen and (orientation:landscape){
+@media (orientation:portrait){
   #turn{ display:block; }
   #container{ display:none; }
 }
-@media only screen and (orientation:portrait){
+@media (orientation:landscape),(min-width : 1224px){
   #turn{ display:none; }
   #container{ display:block; }
 }
