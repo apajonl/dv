@@ -9,11 +9,11 @@
   }
 }
 
-@media (orientation:portrait){
+@media (orientation:landscape),(min-width : 1224px){
   #turn{ display:block; }
   #container{ display:none; }
 }
-@media (orientation:landscape),(min-width : 1224px){
+@media (orientation:portrait){
   #turn{ display:none; }
   #container{ display:block; }
 }
