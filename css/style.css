@@ -191,7 +191,9 @@ img {
   font-size: 1.5em;
   color: #FFF;
 }
-
+#apajo {
+ holder: auto;	
+}
 #left {
   width: 10%;
   left: 0;
