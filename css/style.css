@@ -2,15 +2,20 @@
   div.showport {
     display: none;
   }
-    body {
-    background: #212121 
-    opacity: 0.95;
-  }
 }
 @media (orientation: landscape),(min-width : 1224px){
   div.showturn {
     display: none;
   }
+}
+
+@media only screen and (orientation:landscape){
+  #turn{ display:block; }
+  #container{ display:none; }
+}
+@media only screen and (orientation:portrait){
+  #turn{ display:none; }
+  #container{ display:block; }
 }
 
 html {  
