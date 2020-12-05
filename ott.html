@@ -11,7 +11,6 @@ div.example2 {
 
 @media (orientation: portrait){
   div.showport {
-    background: #111111
     display: none;
   }
 }
@@ -19,6 +18,15 @@ div.example2 {
   div.showturn {
     display: none;
   }
+}
+  
+@media only screen and (orientation:portrait){
+  #turn{ display:block; }
+  #container{ display:none; }
+}
+@media only screen and (orientation:landscape){
+  #turn{ display:none; }
+  #container{ display:block; }
 }
   img {
     max-width: 100%;
@@ -37,11 +45,11 @@ div.example2 {
 </head>
 <body>
 
-<div class="showport">
+<div id="container">
   <img class="img-responsive" name="usaMap" src="./image/startscherm.png" usemap="#m_usaMap" height="100%">
 </div>
 
- <div class="showturn">
+ <div id="turn">
    <img class="img-responsive" src="./image/rotate.png" height="100%">
  </div>
 test responsive
