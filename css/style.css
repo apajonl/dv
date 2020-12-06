@@ -2,10 +2,16 @@
   div.showport {
     display: none;
   }
+  div.showturn {
+    display: block;
+  }
 }
 @media (orientation: landscape),(min-width : 1224px){
   div.showturn {
     display: none;
+  }
+  div.showport {
+    display: block;
   }
 }
 
