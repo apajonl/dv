@@ -9,6 +9,10 @@
   }
 }
 
+* {
+  touch-action: manipulation;
+}
+
 html {  
     position: relative;
     overflow: hidden;
