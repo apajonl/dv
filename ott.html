@@ -3,6 +3,22 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+@media (orientation: portrait){
+  div.showport {
+    display: none;
+  }
+  div.showturn {
+    display: block;
+  }
+}
+@media (orientation: landscape),(min-width : 1224px){
+  div.showturn {
+    display: none;
+  }
+  div.showport {
+    display: block;
+  }
+}  
   
 @media only screen and (orientation:portrait){
   #turn{ display:block; }
@@ -30,13 +46,13 @@
 </head>
 <body>
 
-<div id="container">
+<div class="showport">
   <img class="img-responsive" name="usaMap" src="./image/startscherm.png" usemap="#m_usaMap" height="100%">
 </div>
 
- <div id="turn">
+ <div class="showturn">
    <img class="img-responsive" src="./image/rotate.png" height="100%">
  </div>
-responsive 5
+responsive 6
 </body>
 </html>
