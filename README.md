@@ -1,4 +1,4 @@
-# dv
-digitale verkenning
+# TDV
+Team Digitale Verkenning
 
-Trainings tool for DJI for camera
+Trainings tool for DJI drone
